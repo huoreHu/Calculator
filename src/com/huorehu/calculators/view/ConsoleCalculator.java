@@ -1,14 +1,13 @@
-package com.huorehu.calculators.view;
-
-import java.math.BigDecimal;
-
-import com.huorehu.calculators.TestCalculator;
-import com.huorehu.calculators.operators.BankSimpleOperators;
-import com.huorehu.calculators.operators.Calculator;
+ package com.huorehu.calculators.view;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
+
+import com.huorehu.calculators.MyCalculator;
+import com.huorehu.calculators.operators.BankSimpleOperators;
+import com.huorehu.calculators.operators.Calculator;
 
 public class ConsoleCalculator {
 	
@@ -26,7 +25,7 @@ public class ConsoleCalculator {
 			invitation();
 			BigDecimal argTwo = new BigDecimal(buff.readLine());
 			
-			Calculator myCalc = new TestCalculator(new BankSimpleOperators());
+			Calculator myCalc = new MyCalculator(new BankSimpleOperators());
 		
 			result = myCalc.executeOperation(argOne, argTwo, operator);
 			System.out.println("Результат: " + result);
@@ -43,7 +42,7 @@ public class ConsoleCalculator {
 	}
 
 	private boolean continueRunAnswer() throws IOException {
-		System.out.println("Желаете продолжить?");
+		System.out.println("Желаете продолжить?(y/n)");
 		if (!buff.readLine().equals("y")) {
 			return false;
 		}
