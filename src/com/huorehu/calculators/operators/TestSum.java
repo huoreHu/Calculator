@@ -1,15 +1,16 @@
 package com.huorehu.calculators.operators;
 
 import java.math.BigDecimal;
+
+import org.junit.Assert;
 import org.junit.Test;
-import junit.framework.Assert;
 
 public class TestSum {
     
     Sum testSubject = new Sum();
     
     @Test
-    public void sum_object_object_validSum() {
+    public void sum_bigdec_bigdec_validSum() {
 	//givens
 	BigDecimal a = new BigDecimal(-42);
 	BigDecimal b = new BigDecimal(20);
@@ -36,7 +37,7 @@ public class TestSum {
     }
     
     @Test(expected = NullPointerException.class)
-    public void sum_object_null_NullPointerException() {
+    public void sum_bigdec_null_NullPointerException() {
 	//givens
 	BigDecimal a = new BigDecimal(-42);
 	BigDecimal b = null;
@@ -49,7 +50,7 @@ public class TestSum {
     }
     
     @Test(expected = NullPointerException.class)
-    public void sum_null_object_NullPointerException() {
+    public void sum_null_bigdec_NullPointerException() {
 	//givens
 	BigDecimal a = null;
 	BigDecimal b = new BigDecimal(20);

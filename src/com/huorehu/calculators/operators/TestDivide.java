@@ -10,7 +10,7 @@ public class TestDivide {
     Divide testSubject = new Divide();
     
     @Test
-    public void divide_object_object_object () {
+    public void divide_bigdec_bigdec_object () {
 	//given
 	BigDecimal a = new BigDecimal(40);
 	BigDecimal b = new BigDecimal(20);
@@ -23,7 +23,7 @@ public class TestDivide {
     }
 
     @Test(expected = ArithmeticException.class)
-    public void subtract_object_object0_arithmeticException() {
+    public void subtract_bigdec_bigdec0_arithmeticException() {
 	//given
 	BigDecimal a = new BigDecimal(-40);
 	BigDecimal b = new BigDecimal(0);
