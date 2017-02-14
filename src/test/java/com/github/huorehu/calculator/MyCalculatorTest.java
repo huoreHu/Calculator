@@ -1,18 +1,18 @@
-package com.huorehu.calculators;
+package com.github.huorehu.calculator;
+
 
 import java.math.BigDecimal;
-
 import org.junit.Assert;
 import org.junit.Test;
+import com.github.huorehu.calculator.MyCalculator;
+import com.github.huorehu.calculator.operators.BankOperators;
+import com.github.huorehu.calculator.operators.BankSimpleOperators;
 
-import com.huorehu.calculators.operators.BankOperators;
-import com.huorehu.calculators.operators.BankSimpleOperators;
-import com.huorehu.calculators.operators.SimpleOperation;
 
-public class TestMyCalculator {
+public class MyCalculatorTest {
     
     private BankOperators bankOperators = new BankSimpleOperators();
-    MyCalculator testSubject = new MyCalculator(bankOperators );
+    MyCalculator testSubject = new MyCalculator(bankOperators);
     
     @Test
     public void executeoperations_bigdec_bigdec_string_bigdec() {

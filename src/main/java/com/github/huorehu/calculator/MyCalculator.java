@@ -1,8 +1,8 @@
-package com.huorehu.calculators;
+package com.github.huorehu.calculator;
 
 import java.math.BigDecimal;
-import com.huorehu.calculators.operators.BankOperators;
-import com.huorehu.calculators.operators.Calculator;
+import com.github.huorehu.calculator.operators.BankOperators;
+import com.github.huorehu.calculator.operators.Calculator;
 
 public class MyCalculator implements Calculator {
 	

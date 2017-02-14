@@ -1,4 +1,4 @@
-package com.huorehu.calculators.operators;
+package com.github.huorehu.calculator.operators;
 
 public class BankSimpleOperators extends BankOperators {
 	

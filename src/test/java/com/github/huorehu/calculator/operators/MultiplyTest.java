@@ -1,12 +1,11 @@
-package com.huorehu.calculators.operators;
+package com.github.huorehu.calculator.operators;
+
 
 import java.math.BigDecimal;
-
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
-
-public class TestMultiply {
+public class MultiplyTest {
     
     Multiply testSubject = new Multiply();
     
@@ -24,7 +23,4 @@ public class TestMultiply {
 	
     }
     
-    
-    
-
 }

@@ -1,11 +1,11 @@
-package com.huorehu.calculators.operators;
+package com.github.huorehu.calculator.operators;
 
 import java.math.BigDecimal;
-
 import org.junit.Assert;
 import org.junit.Test;
+import com.github.huorehu.calculator.operators.Sum;
 
-public class TestSum {
+public class SumTest {
     
     Sum testSubject = new Sum();
     

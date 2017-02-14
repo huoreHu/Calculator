@@ -1,11 +1,13 @@
-package com.huorehu.calculators.operators;
+package com.github.huorehu.calculator.operators;
+
 
 import java.math.BigDecimal;
-
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestSubstract {
+import com.github.huorehu.calculator.operators.Subtract;
+
+public class SubstractTest {
     
     Subtract testSubject = new Subtract();
     

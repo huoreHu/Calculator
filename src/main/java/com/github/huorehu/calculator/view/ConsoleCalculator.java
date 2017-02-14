@@ -1,13 +1,13 @@
- package com.huorehu.calculators.view;
+package com.github.huorehu.calculator.view;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.math.BigDecimal;
 
-import com.huorehu.calculators.MyCalculator;
-import com.huorehu.calculators.operators.BankSimpleOperators;
-import com.huorehu.calculators.operators.Calculator;
+import com.github.huorehu.calculator.MyCalculator;
+import com.github.huorehu.calculator.operators.BankSimpleOperators;
+import com.github.huorehu.calculator.operators.Calculator;
 
 public class ConsoleCalculator {
 	
